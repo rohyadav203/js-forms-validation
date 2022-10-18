@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container {
+            width: 20%;
+            padding: 8% 0;
+            margin: auto;
+        }    
+        .login-form-container {
+            position: relative;
+            background: gainsboro;
+            padding: 45px;
+            text-align: center;
+            margin: 0 auto 100px;
+        }
+        .form-wrapper-container {
+
+        }
+        .email-container .email-input{
+            background: #f2f2f2;
+            margin: 0 0 15px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            border: 0;
+            font-size: 14px;
+            padding: 15px;
+            width: 100%;
+        }
+        .password-container .password-input{
+            background: #f2f2f2;
+            margin: 0 0 15px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            border: 0;
+            font-size: 14px;
+            padding: 15px;
+            width: 100%;
+        }
+        .button-container .login-button {
+            text-transform: uppercase;
+            border: 0;
+            background: darkgrey;
+            padding: 15px;
+            font-size: 14px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="login-form-container">
+            <form class="form-wrapper-container">
+                <div class="email-container">
+                    <!-- <label class="email-label" for="email">Email:</label> -->
+                    <input type="email" id="email" class="email-input" placeholder="Username">
+                </div>
+                <div class="password-container">
+                    <!-- <label for="password" class="password-label">Password:</label> -->
+                    <input type="password" id="password" class="password-input" placeholder="Password">
+                </div>
+                <div class="button-container">
+                    <button class="login-button" type="button">Login</button>
+                </div>
+                <div class="register-container">
+                    <div class="text-container">
+                        <span>Not registered? <a href="">Create an account</a></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

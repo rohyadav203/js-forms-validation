@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-wrapper {
+            border: 3px solid #f1f1f1;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 12px 0px 24px 0px;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        label {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            background-color: #04aa6d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .new-user-register {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <form class="form-wrapper">
+        <div class="image-container">
+            <img src="img_avatar.png" alt="Avatar">
+        </div>
+
+        <div class="input-container">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span class="forgot-password">Forgot your <a href="">Password?</a></span>
+
+            <button type="submit" class="submit-button">Login</button>
+            <label>
+                <input type="checkbox" checked name="remember">Remember me
+            </label>
+            <span class="new-user-register">Not registered? <a href="">Create an account</a></span>
+        </div>
+    </form>
+
+    <script src="js/login-form-handler.js"></script>
+</body>
+</html>
